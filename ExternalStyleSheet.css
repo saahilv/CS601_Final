@@ -1,0 +1,145 @@
+/*Adding general style for the whole body*/
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 3em;
+    background-image: url("Media/Wallpaper.jpg");
+    color: white;
+    text-align: center;
+    table-layout: auto;
+}
+
+/*Adding styling for section titles*/
+.SectionTitles {
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+/*Adding font color for hyper links - Souce:https://www.w3schools.com/css/css_link.asp*/
+a:link {
+    color: lightgreen;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    background-color: darkgray;
+}
+
+/*Adjusting font size where required*/
+.AdjustSize {
+    height: 500px;
+    ;
+    width: 600px;
+    ;
+}
+
+/*Adjusting layout as required*/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Adjusting bullets and numbers as required*/
+ul {
+    list-style: square;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: upper-roman;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/*Styling the table*/
+table {
+    border-color: coral;
+    border-style: groove;
+    border-width: 0.5em;
+    background-image: url("media/nsv2.png");
+    padding: 5px;
+
+}
+
+/*Styling the table*/
+table th {
+    padding: 5px 10px;
+}
+
+/*Styling the table*/
+table td {
+    padding: 5px 10px;
+}
+
+/*Styling the navigation pane*/
+nav {
+    border-color: bisque;
+    border-style: double;
+    background-image: url("media/nav.jpg");
+    background-repeat: no-repeat;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    float: left;
+    width: 100%;
+}
+
+/*Styling the bullets in nav*/
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    float: left;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+}
+/*Home page button inspired from : https://www.joshwcomeau.com/animation/3d-button/*/
+.WorkButton {
+    background: rgb(3, 0, 163);
+    border-radius: 12px;
+    border:0.2em;
+    padding: 0.2em;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 14px 44px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: rgb(0, 64, 240);
+    color: white;
+    transform: translateY(-8px);
+  }
+
+  .WorkButton:active .front {
+    transform: translateY(-1px);
+  }
+
+  /*Making the text box red if input is invalid*/
+input:invalid {
+    border: 2px solid red;
+}
+/*Keeping the text box black if input is valid*/
+input:valid {
+    border: 2px solid black;
+}
+/*Setting color for error message*/
+span {
+    color:red;
+}

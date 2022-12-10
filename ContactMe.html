@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Adding the Title to the page in the head section below -->
+
+<head>
+    <title>Saahil Vashishta - Leave your Mark</title>
+    <meta charset=UTF-8">
+    <link href="ExternalStyleSheet.css" rel="stylesheet">
+    <script src="ContactMeSrpt.js"></script>
+</head>
+
+<!-- Adding the Body to the page in the head section below -->
+
+<body>
+    <!-- Adding a navigation section -->
+    <nav class="list--">
+        <!-- Navigation section is an unordered list -->
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="FamilyAboutPage.html">Vashishta Family</a></li>
+            <li><a href="Locations.html">Locations</a></li>
+            <li><a href ="ContactMe.html">Leave your Mark</a></li>
+            <li><a href ="Resume.html">Résumé</a></li>
+        </ul>
+    </nav>
+    <!-- The first section -->
+    <h1 class="SectionTitles">Leave your Mark</h1>
+    <!-- Adding Web Based Form -->
+    <form name="contactForm" id="contactForm" method="post" action="">
+        <!-- Adding and validating the text fields (Visitor name) -->
+        <p> Enter your name:
+            <input type="text" name="Name" id="Name" minlength="2" required pattern="[a-zA-Z ]+" onchange="return validateContactForm(true, false, false, false);">
+        </p>
+        <!-- Adding the first error message -->
+        <span id="NameError"></span>
+        <br>
+        <!-- Adding and validating the text fields (Visitor Age) This website is PG 13 -->
+        <p> Enter your age:
+            <input type="number" name="Age" id="Age" min="13" max="122" onchange="return validateContactForm(false, true, false, false);">
+        </p>
+        <!-- Adding the second error message -->
+        <span id="AgeError"></span>
+        <br>
+        <!-- Adding and validating the text fields (Visitor Location City)-->
+        <p> Enter your location city:
+            <input type="text" name="city" id="city" minlength="2" required pattern="[a-zA-Z ]+" onchange="return validateContactForm(false, false, true, false);">
+        </p>
+        <!-- Adding the third error message -->
+        <span id="CityError"></span>
+        <br>
+        <!-- Adding and validating the text fields (Visitor Location Country)-->
+        <p> Enter your location country:
+            <input type="text" name="country" id="country" minlength="2" required pattern="[a-zA-Z ]+" onchange="return validateContactForm(false, false, false, true);">
+        </p>
+        <!-- Adding the fourth error message -->
+        <span id="CountryError"></span>
+        <br>
+        <!-- Adding radio buttons -->
+        <fieldset> <legend>Select your Sex: </legend>
+            <input type="radio" id = "radio1" name="radioMale" value="radioMale">Male <br>
+            <input type="radio" id = "radio2" name="radioFemale" value="radioFemale">Female <br>
+            <input type="radio" id = "radio3" name="radioTransgender" value="radioTransgender">Transgender <br>
+            <input type="radio" id = "radio4" name="radioGenderneutral" value="radioGenderneutral">Gender Neutral <br>
+            <input type="radio" id = "radio5" name="radioNonbinary" value="radioNonbinary">Non-Binary <br>
+            <input type="radio" id = "radio6" name="radioAgender" value="radioAgender">Agender <br>
+            <input type="radio" id = "radio7" name="radioPangender" value="radioPangender">Pan-Gender <br>
+            <input type="radio" id = "radio8" name="radioGenderqueer" value="radioGenderqueer">Gender Queer <br>
+            <input type="radio" id = "radio9" name="radioAll" value="radioAll">All <br>
+            <input type="radio" id = "radio10" name="radioNone" value="radioNone">None <br>
+            <input type="radio" id = "radio11" name="radioCombo" value="radioCombo">A combination of these <br>
+        </fieldset> <br>
+        <!-- Adding check boxes -->
+        <fieldset> <legend>How did you hear about me? </legend>
+            <input type="checkbox" id = "cb1" name="Friend" value="Friend">From a friend <br>
+            <input type="checkbox" id = "cb2" name="socialMedia" value="socialMedia">Social Media <br>
+            <input type="checkbox" id = "cb3" name="BUPeer" value="BUPeer">A peer in the BU  <br>
+            <input type="checkbox" id = "cb4" name="OtherSource" value="OtherSource">Other Source <br>
+            Other (please specify): <input type="text" name="otherChoice" id="otherChoice"> <br>
+        </fieldset>
+        <br>
+        <p><input type="submit" id="submitBt" value="Post"></p>
+
+    </form>
+
+</body>
+
+</html>
