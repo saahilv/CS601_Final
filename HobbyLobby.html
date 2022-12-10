@@ -30,8 +30,8 @@
      <fieldset id="app">
     <div class="gallary">
         <ul class="image-gallery">
-            <transition v-if="showMessage">
-                <div>{{ message }}</div>
+            <transition>
+                <p v-if="showMessage">{{ message }}</p>
             </transition>
             <li>
                 <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
