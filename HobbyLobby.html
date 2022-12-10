@@ -34,18 +34,18 @@
                 <p>{{ message }}</p>
             </transition>
             <li>
-                <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('I have been playing the guitar since 20xx and was in my high school rock band.')"/>
+                <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
             </li>
             <li>
-                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()"/>
-                <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()"/>
+                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>
+                <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()" @mouseover="changeMessage('gym')"/>
             </li>
             <li>
-                <img src="Media/Piano.png" alt="Playing piano" @mouseleave="hideMessage()"/>
-                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseleave="hideMessage()"/>
+                <img src="Media/Piano.png" alt="Playing piano" @mouseleave="hideMessage()" @mouseover="changeMessage('piano')"/>
+                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseleave="hideMessage()" @mouseover="changeMessage('netflix')"/>
             </li>
             <li>
-                <img src="Media/Travel.png" alt="Traveling" @mouseleave="hideMessage()"/>
+                <img src="Media/Travel.png" alt="Traveling" @mouseleave="hideMessage()" @mouseover="changeMessage('travel')"/>
             </li>
         </ul>
     </div>
