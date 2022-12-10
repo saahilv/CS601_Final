@@ -31,7 +31,7 @@
     <div class="gallary">
         <ul class="image-gallery">
             <transition v-if="showMessage">
-                <p>{{ message }}</p>
+                <div>{{ message }}</div>
             </transition>
             <li>
                 <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
