@@ -7,7 +7,7 @@ createApp({
             message: ""
         }
     }, methods: {
-        showMessage(message) {
+        changeMessage(message) {
             this.showMessage = true;
             this.message = message;
         },
