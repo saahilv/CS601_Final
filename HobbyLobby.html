@@ -24,15 +24,16 @@
     </nav>
      <!-- The first section -->
      <h1 class="SectionTitles">The Hobby Lobby</h1>
-     <h2> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
+     <transition>
+        <h2 v-if="showMessage">{{ message }}</p>
+        <h2 v-if="!showMessage"> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
+    </transition>
      <br>
      <!--Gallery in a frame-->
      <fieldset id="app">
     <div class="gallary">
         <ul class="image-gallery">
-            <transition>
-                <p class="gallery-message" v-if="showMessage">{{ message }}</p>
-            </transition>
+
             <li>
                 <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
             </li>
