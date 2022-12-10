@@ -24,33 +24,32 @@
     </nav>
      <!-- The first section -->
      <h1 class="SectionTitles">The Hobby Lobby</h1>
-     
+     <h2> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
+     <br>
      <!--Gallery in a frame-->
      <fieldset id="app">
-        <transition>
-            <h2 v-if="showMessage === true">{{ message }}</p>
-            <h2 v-else-if="showMessage === false"> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
-        </transition>
-        <br>
-        <div class="gallary">
-            <ul class="image-gallery">
-
-                <li>
-                    <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
-                </li>
-                <li>
-                    <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>
-                    <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()" @mouseover="changeMessage('gym')"/>
-                </li>
-                <li>
-                    <img src="Media/Piano.png" alt="Playing piano" @mouseleave="hideMessage()" @mouseover="changeMessage('piano')"/>
-                    <img src="Media/Netflix.jpg" alt="Watching TV" @mouseleave="hideMessage()" @mouseover="changeMessage('netflix')"/>
-                </li>
-                <li>
-                    <img src="Media/Travel.png" alt="Traveling" @mouseleave="hideMessage()" @mouseover="changeMessage('travel')"/>
-                </li>
-            </ul>
-        </div>
+    <div class="gallary">
+        <ul class="image-gallery">
+            <transition>
+                <p class="gallery-message" v-if="showMessage">{{ message }}</p>
+            </transition>
+            <br>
+            <li>
+                <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
+            </li>
+            <li>
+                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>
+                <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()" @mouseover="changeMessage('gym')"/>
+            </li>
+            <li>
+                <img src="Media/Piano.png" alt="Playing piano" @mouseleave="hideMessage()" @mouseover="changeMessage('piano')"/>
+                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseleave="hideMessage()" @mouseover="changeMessage('netflix')"/>
+            </li>
+            <li>
+                <img src="Media/Travel.png" alt="Traveling" @mouseleave="hideMessage()" @mouseover="changeMessage('travel')"/>
+            </li>
+        </ul>
+    </div>
      </fieldset>
     </body>
     </html>
