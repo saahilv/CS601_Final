@@ -29,7 +29,7 @@
      <fieldset id="app">
         <transition>
             <h2 v-if="showMessage">{{ message }}</p>
-            <h2 v-if="!showMessage"> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
+            <h2 v-else-if="!showMessage"> Here are few of my hobbies you can see by hovering the mouse over the picture</h2>
         </transition>
         <br>
         <div class="gallary">
