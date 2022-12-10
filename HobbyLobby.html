@@ -28,10 +28,28 @@
      <br>
      <!--Gallery in a frame-->
      <fieldset id="app">
-        <p>{{ imageSource.alt }}</p>
-        <transition>
-            <img id="hobbyImage" :alt-text="imageSource.alt" :src="imageSource.src" width="500" height="500" @mouseover="changeImage"/>
-        </transition>
+    <div class="gallary">
+        <ul class="image-gallery">
+            <transition class="overlay" v-if="showMessage">
+                <p>{{ message }}</p>
+            </transition>
+            <li>
+                <img src="Media/Guitar.png" alt="Playing guitar" @onmouseover="showMessage('I have been playing the guitar since 20xx and was in my high school rock band.'')"/>
+            </li>
+            <li>
+                <img src="Media/Paddleboard.png" alt="Paddle boarding" />
+
+                <img src="Media/Gym.jpg" alt="Working out" />
+            </li>
+            <li>
+                <img src="Media/Piano.png" alt="Playing piano" />
+                <img src="Media/Netflix.jpg" alt="Watching TV" />
+            </li>
+            <li>
+                <img src="Media/Travel.png" alt="Traveling" />
+            </li>
+        </ul>
+    </div>
      </fieldset>
     </body>
     </html>

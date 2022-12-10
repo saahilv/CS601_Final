@@ -56,7 +56,7 @@ ol {
     padding: 0;
 }
 
-li {
+.location li {
     text-align: center;
     list-style-position: inside;
 }
@@ -142,4 +142,44 @@ input:valid {
 /*Setting color for error message*/
 span {
     color:red;
+}
+
+.gallary {
+    width: 100%;
+} 
+
+/* TODO: WHY IS THE LAST COLUMN NOT BEING POPULATED */
+/* hobby gallary settings */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.image-gallery > li {
+    flex: 22%;
+    max-width: 22%;
+    padding: 0 4px;
+    list-style: none;
+}
+.image-gallery li img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.image-gallery .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e2e2e2;
+}
+
+.image-gallery li:hover .overlay {
+    opacity: 1;
 }
