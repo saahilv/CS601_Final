@@ -167,6 +167,10 @@ span {
     width: 100%;
 }
 
+.gallery-message {
+    width: 100%;
+}
+
 .v-enter-active,
 .v-leave-active {
     transition: opacity 0.5s ease;
