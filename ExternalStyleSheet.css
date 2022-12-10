@@ -167,7 +167,7 @@ span {
     width: 100%;
 }
 
-.image-gallery .overlay {
+/* .image-gallery .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -182,4 +182,4 @@ span {
 
 .image-gallery li:hover .overlay {
     opacity: 1;
-}
+} */
