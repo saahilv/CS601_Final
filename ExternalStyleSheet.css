@@ -176,13 +176,12 @@ span {
     height: 20px;
 }
 
-.overlay-enter-active,
-.overlay-leave-active {
+.v-enter-active,
+.v-leave-active {
     transition: opacity 0.5s ease;
 }
 
-.overlay-enter-from,
-.overlay-leave-to {
-    transition: opacity 0.5s ease;
+.v-enter-from,
+.v-leave-to {
     opacity: 0;
 }
