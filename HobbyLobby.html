@@ -30,7 +30,7 @@
      <fieldset id="app">
     <div class="gallary">
         <ul class="image-gallery">
-            <transition class="overlay" v-if="showMessage">
+            <transition v-if="showMessage">
                 <p>{{ message }}</p>
             </transition>
             <li>
