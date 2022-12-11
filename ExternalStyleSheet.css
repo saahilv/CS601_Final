@@ -165,12 +165,11 @@ span {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    position: absolute;
 }
 
 .gallery-message {
-    position: relative;
-    width: 100%;
+    position: fixed;
+    background-color: gray;
 }
 
 .v-enter-active,
@@ -180,5 +179,5 @@ span {
 
 .v-enter-from,
 .v-leave-to {
-    opacity: 0;
+    opacity: 0.6;
 }
