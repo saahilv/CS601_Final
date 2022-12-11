@@ -44,7 +44,7 @@
                     </transition>
                 </div>
                 <div class="image-container">
-                    <img src="Media/paddlboarding.jpg" alt="Playing guitar" @mouseover="changeMessage('paddlboarding)"/>
+                    <img src="Media/paddlboarding.jpg" alt="Playing guitar" @mouseover="changeMessage('paddlboarding')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'paddlboarding && isShown">{{ message }}</div>
                     </transition>
@@ -84,7 +84,7 @@
             </li>
             <li>
                 <div class="image-container">
-                    <img src="Media/cliff.jpg" alt="Playing guitar" @mouseover="changeMessage('cliff)"/>
+                    <img src="Media/cliff.jpg" alt="Playing guitar" @mouseover="changeMessage('cliff')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'cliff && isShown">{{ message }}</div>
                     </transition>
