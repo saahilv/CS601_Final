@@ -42,6 +42,10 @@
         <!-- Adding the second error message -->
         <span id="AgeError"></span>
         <br>
+        <!--Adding your zipcode and validating it-->
+        <p>Enter your Zipcode: 
+            <input type="number" name="Zip" id="Zip" minlength="5" required pattern="[0-9]+" min="0" max="99999" onchange="return fetchLocationData(false, false, true, false);">
+        </p>
         <!-- Adding and validating the text fields (Visitor Location City)-->
         <p> Enter your location city:
             <input type="text" name="city" id="city" minlength="2" required pattern="[a-zA-Z ]+" onchange="return validateContactForm(false, false, true, false);">

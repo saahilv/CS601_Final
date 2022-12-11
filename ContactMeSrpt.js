@@ -121,3 +121,10 @@ function validateContactForm(validName, validAge, validLocationCity,validLocatio
     return true;
 }
 
+async function fetchLocationData() {
+    const response = await fetch('http://api.zippopotam.us/us/98121');
+    const data = await response.json();
+
+    return data;
+}
+
