@@ -182,6 +182,10 @@ span {
     width: 100%;
     background-color: gray;
     overflow-wrap: break-word;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .v-enter-active,
