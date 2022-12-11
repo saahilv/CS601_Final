@@ -170,6 +170,9 @@ span {
 .gallery-message {
     position: fixed;
     background-color: gray;
+    width:inherit;
+    max-width:inherit;
+    overflow-wrap: break-word;
 }
 
 .v-enter-active,

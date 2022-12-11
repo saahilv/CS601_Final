@@ -30,15 +30,15 @@
      <fieldset id="app">
     <div class="gallary">
         <ul class="image-gallery">
-            <transition>
-                <p class="gallery-message" v-if="showMessage">{{ message }}</p>
-            </transition>
-            <br>
             <li>
                 <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
+                <transition>
+                    <p class="gallery-message" v-if="currentImg == 'guitar' && isShown">{{ message }}</p>
+                </transition>
             </li>
             <li>
                 <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>
+                
                 <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()" @mouseover="changeMessage('gym')"/>
             </li>
             <li>

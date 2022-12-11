@@ -7,21 +7,25 @@ const overlayMessages = {
     "netflix": "My favorite way to relax is by watching TV",
     "gym": "I go to the gym to feel good and sometimes my wife manages to drag me out on a run",
     "paddleboard": "I love to paddleboard after work during the summer",
+
 }
 
 createApp({
     data() {
         return {
-            showMessage: false,
+            currentImg: null,
+            isShown: false,
             message: ""
         }
     }, methods: {
-        changeMessage(image) {
-            this.showMessage = true;
-            this.message = overlayMessages[image];
+        changeMessage(imageId) {
+            this.currentImg = imageId;
+            this.isShown = true;
+            this.message = overlayMessages[imageId]
         },
         hideMessage() {
-            this.showMessage = false;
+            this.currentImg = null;
+            this.isShown = false;
         }
     }
 }).mount('#app')
