@@ -122,7 +122,7 @@ function validateContactForm(validName, validAge, validLocationCity,validLocatio
 }
 
 async function fetchLocationData() {
-    const zipCode = document.getElementById("Zip");
+    const zipCode = document.getElementById("Zip").value;
     console.log(zipCode);
     const response = await fetch('https://api.zippopotam.us/us/98121');
     const data = await response.json();
