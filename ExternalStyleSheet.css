@@ -200,3 +200,7 @@ span {
 .v-leave-to {
     opacity: 0.6;
 }
+
+.family p {
+    background-color: black;
+}
