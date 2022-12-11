@@ -123,11 +123,55 @@ function validateContactForm(validName, validAge, validLocationCity,validLocatio
 
 async function fetchLocationData() {
     const zipCode = document.getElementById("Zip").value;
-    console.log(zipCode);
-    const response = await fetch('https://api.zippopotam.us/us/98121');
-    const data = await response.json();
-    console.log(data);
 
-    return data;
+    const re = new RegExp('^[0-9]+$');
+    var errorMsg = "";
+    var valid = true;
+    // conditions to check min number of characters
+    if (zipCode.length < 5) {
+        errorMsg = "The zip code should be at least 5 numbers long"; 
+        valid = false;   
+    } 
+    // conditions to check all characters are numbers
+    else if (!re.test(zipCode)) { 
+        errorMsg = "The zip code should only contain numbers";
+        valid = false;  
+    }
+   
+    console.log(zipCode);
+    await fetch(`https://api.zippopotam.us/us/${zipCode}`).then((response) => {
+        if(!response.ok) {
+            throw response.status;
+        }
+        return response.json();
+    }).then(data => {
+        setLocation(data);
+    //Error catching
+    }).catch((err) => {
+        setLocation(null);
+        errorMsg = "The zip code provided did not return a valid result: " + err;
+        valid = false;  
+        console.log(errorMsg);
+    });
+
+     // Error message update
+     ZipError.textContent= errorMsg;
+     validateContactForm(false, false, true, true);
+}
+// Autofilling location based on zipcode
+function setLocation(data){
+    if(data && data.places && data.places.length >= 1){
+        document.getElementById("city").value = data.places[0]['place name']
+        document.getElementById("country").value = data.country
+    }
+    else {
+        document.getElementById("city").value = ""
+        document.getElementById("country").value = ""
+    }
+}
+// Submit button action 
+function postButton() {
+    alert("Your response has been noted, thank you for visiting this website!");
+    location.replace="/HomePage.html";
 }
 
