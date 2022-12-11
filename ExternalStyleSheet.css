@@ -168,6 +168,7 @@ span {
 }
 
 .gallery-message {
+    position: relative;
     width: 100%;
 }
 
