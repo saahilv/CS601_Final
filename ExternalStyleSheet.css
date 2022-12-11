@@ -153,11 +153,10 @@ span {
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
 }
 .image-gallery > li {
-    flex: 22%;
-    max-width: 22%;
+    flex: 23%;
+    max-width: 25%;
     padding: 0 4px;
     list-style: none;
 }

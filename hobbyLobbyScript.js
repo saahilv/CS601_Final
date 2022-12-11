@@ -9,6 +9,7 @@ const overlayMessages = {
     "luau": "TODO",
     "mailbox": "TODO",
     "maple": "TODO",
+    "mexico": "TODO",
     "paddleboarding": "TODO",
     "piano": "I have been playing the piano.",
     "rainier": "TODO",
