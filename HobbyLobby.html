@@ -28,27 +28,27 @@
      <br>
      <!--Gallery in a frame-->
      <fieldset id="app">
-    <div class="gallary">
+    <div class="gallary" @mouseleave="hideMessage()">
         <ul class="image-gallery">
             <li>
                 <div class="image-container">
-                    <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
+                    <img src="Media/Guitar.png" alt="Playing guitar" @mouseover="changeMessage('guitar')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'guitar' && isShown">{{ message }}</div>
                     </transition>
                 </div>
             </li>
             <li>
-                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>
+                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseover="changeMessage('paddleboard')"/>
                 
-                <img src="Media/Gym.jpg" alt="Working out" @mouseleave="hideMessage()" @mouseover="changeMessage('gym')"/>
+                <img src="Media/Gym.jpg" alt="Working out"  @mouseover="changeMessage('gym')"/>
             </li>
             <li>
-                <img src="Media/Piano.png" alt="Playing piano" @mouseleave="hideMessage()" @mouseover="changeMessage('piano')"/>
-                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseleave="hideMessage()" @mouseover="changeMessage('netflix')"/>
+                <img src="Media/Piano.png" alt="Playing piano" @mouseover="changeMessage('piano')"/>
+                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseover="changeMessage('netflix')"/>
             </li>
             <li>
-                <img src="Media/Travel.png" alt="Traveling" @mouseleave="hideMessage()" @mouseover="changeMessage('travel')"/>
+                <img src="Media/Travel.png" alt="Traveling" @mouseover="changeMessage('travel')"/>
             </li>
         </ul>
     </div>
