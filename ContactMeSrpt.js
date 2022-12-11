@@ -139,6 +139,10 @@ async function fetchLocationData() {
     }
    
     console.log(zipCode);
+
+    document.getElementById("city").value = "loading..."
+    document.getElementById("country").value = "loading..."
+    
     await fetch(`https://api.zippopotam.us/us/${zipCode}`).then((response) => {
         if(!response.ok) {
             throw response.status;
