@@ -32,23 +32,101 @@
         <ul class="image-gallery">
             <li>
                 <div class="image-container">
-                    <img src="Media/Guitar.png" alt="Playing guitar" @mouseover="changeMessage('guitar')"/>
+                    <img src="Media/guitar.jpg" alt="Playing guitar" @mouseover="changeMessage('guitar')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'guitar' && isShown">{{ message }}</div>
                     </transition>
                 </div>
+                <div class="image-container">
+                    <img src="Media/keys.jpg" alt="Playing guitar" @mouseover="changeMessage('keys')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'keys' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/paddlboarding.jpg" alt="Playing guitar" @mouseover="changeMessage('paddlboarding)"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'paddlboarding && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/rattlesnake.jpg" alt="Playing guitar" @mouseover="changeMessage('rattlesnake')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'rattlesnake' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
             <li>
-                <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseover="changeMessage('paddleboard')"/>
-                
-                <img src="Media/Gym.jpg" alt="Working out"  @mouseover="changeMessage('gym')"/>
+                <div class="image-container">
+                    <img src="Media/amsterdam.jpg" alt="Playing guitar" @mouseover="changeMessage('amsterdam')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'amsterdam' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/luau.jpg" alt="Playing guitar" @mouseover="changeMessage('luau')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'luau' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/piano.jpg" alt="Playing guitar" @mouseover="changeMessage('piano')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'piano' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/workingout.jpg" alt="Playing guitar" @mouseover="changeMessage('workingout')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'workingout' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
             <li>
-                <img src="Media/Piano.png" alt="Playing piano" @mouseover="changeMessage('piano')"/>
-                <img src="Media/Netflix.jpg" alt="Watching TV" @mouseover="changeMessage('netflix')"/>
+                <div class="image-container">
+                    <img src="Media/cliff.jpg" alt="Playing guitar" @mouseover="changeMessage('cliff)"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'cliff && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/mailbox.jpg" alt="Playing guitar" @mouseover="changeMessage('mailbox')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'mailbox' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/rainier.jpg" alt="Playing guitar" @mouseover="changeMessage('rainier')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'rainier' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/yellowstone.jpg" alt="Playing guitar" @mouseover="changeMessage('yellowstone')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'yellowstone' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
             <li>
-                <img src="Media/Travel.png" alt="Traveling" @mouseover="changeMessage('travel')"/>
+                <div class="image-container">
+                    <img src="Media/italy.jpg" alt="Playing guitar" @mouseover="changeMessage('italy')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'italy' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/maple.jpg" alt="Playing guitar" @mouseover="changeMessage('maple')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'maple' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
+                <div class="image-container">
+                    <img src="Media/rainier2.jpg" alt="Playing guitar" @mouseover="changeMessage('rainier2')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'rainier2' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
         </ul>
     </div>
