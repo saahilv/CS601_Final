@@ -127,6 +127,12 @@
                         <div class="gallery-message" v-if="currentImg === 'rainier2' && isShown">{{ message }}</div>
                     </transition>
                 </div>
+                <div class="image-container">
+                    <img src="Media/rainier2.jpg" alt="Playing guitar" @mouseover="changeMessage('rainier2')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'rainier2' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
         </ul>
     </div>
