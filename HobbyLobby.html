@@ -33,7 +33,7 @@
             <li>
                 <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
                 <transition>
-                    <p class="gallery-message" v-if="currentImg == 'guitar' && isShown">{{ message }}</p>
+                    <p class="gallery-message" v-if="currentImg === 'guitar' && isShown">{{ message }}</p>
                 </transition>
             </li>
             <li>
