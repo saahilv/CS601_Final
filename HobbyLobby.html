@@ -44,7 +44,7 @@
                     </transition>
                 </div>
                 <div class="image-container">
-                    <img src="Media/paddlboarding.jpg" alt="paddleboarding on a lake" @mouseover="changeMessage('paddlboarding')"/>
+                    <img src="Media/paddlboarding.jpg" alt="paddleboarding on a lake" @mouseover="changeMessage('paddleboarding')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'paddleboarding' && isShown">{{ message }}</div>
                     </transition>
