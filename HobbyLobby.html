@@ -31,10 +31,12 @@
     <div class="gallary">
         <ul class="image-gallery">
             <li>
-                <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
-                <transition>
-                    <p class="gallery-message" v-if="currentImg === 'guitar' && isShown">{{ message }}</p>
-                </transition>
+                <div class="image-container">
+                    <img src="Media/Guitar.png" alt="Playing guitar" @mouseleave="hideMessage()" @mouseover="changeMessage('guitar')"/>
+                    <transition>
+                        <div class="gallery-message" v-if="currentImg === 'guitar' && isShown">{{ message }}</div>
+                    </transition>
+                </div>
             </li>
             <li>
                 <img src="Media/Paddleboard.png" alt="Paddle boarding" @mouseleave="hideMessage()" @mouseover="changeMessage('paddleboard')"/>

@@ -164,14 +164,22 @@ span {
 .image-gallery li img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.image-container {
+    position: relative;
     width: 100%;
 }
 
 .gallery-message {
-    position: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     background-color: gray;
-    width:inherit;
-    max-width:inherit;
     overflow-wrap: break-word;
 }
 
