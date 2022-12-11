@@ -172,6 +172,5 @@ function setLocation(data){
 // Submit button action 
 function postButton() {
     alert("Your response has been noted, thank you for visiting this website!");
-    location.href = "https://saahilvashishta.netlify.app/homepage";
 }
 
