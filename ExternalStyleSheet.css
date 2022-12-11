@@ -87,7 +87,7 @@ table td {
 
 /*Styling the navigation pane*/
 nav {
-    border-color: bisque;
+    border-color: gray;
     border-style: double;
     background-image: url("media/nav.jpg");
     background-repeat: no-repeat;
