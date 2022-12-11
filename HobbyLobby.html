@@ -58,7 +58,7 @@
             </li>
             <li>
                 <div class="image-container">
-                    <img src="Media/amsterdam.jpg" alt="message" @mouseover="changeMessage('amsterdam')"/>
+                    <img src="Media/amsterdam.jpg" :alt="message" @mouseover="changeMessage('amsterdam')"/>
                     <transition>
                         <div class="gallery-message" v-if="currentImg === 'amsterdam' && isShown">{{ message }}</div>
                     </transition>
